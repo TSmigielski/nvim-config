@@ -21,4 +21,23 @@ return require('packer').startup(function(use)
     use('freddiehaddad/feline.nvim')
     use('nvim-tree/nvim-web-devicons')
     use('lewis6991/gitsigns.nvim')
+
+    -- LspZero
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v2.x',
+        requires = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},             -- Required
+            {'williamboman/mason.nvim'},           -- Optional
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},     -- Required
+            {'hrsh7th/cmp-nvim-lsp'}, -- Required
+            {'L3MON4D3/LuaSnip'},     -- Required
+        }
+    }
+
+    use('jlcrochet/vim-razor')
 end)
