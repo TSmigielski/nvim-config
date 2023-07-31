@@ -40,4 +40,7 @@ return require('packer').startup(function(use)
     }
 
     use('jlcrochet/vim-razor')
+    use('jghauser/mkdir.nvim')
+    use('nguyenvukhang/nvim-toggler')
+    use('jiangmiao/auto-pairs')
 end)
